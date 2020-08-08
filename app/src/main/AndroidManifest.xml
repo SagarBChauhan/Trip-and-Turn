@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tripandturn">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/plane_roundedcorner_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/papper_plane_round_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BookPackage3"></activity>
+        <activity
+            android:name=".BookPackage2"
+            android:label="Package Details"
+            android:parentActivityName=".BookPackage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PassportAssistance"
+            android:parentActivityName=".CustomerActivity" />
+        <activity
+            android:name=".PlanTour"
+            android:parentActivityName=".CustomerActivity" />
+        <activity
+            android:name=".BookHotel"
+            android:parentActivityName=".CustomerActivity" />
+        <activity
+            android:name=".BookPackage"
+            android:parentActivityName=".CustomerActivity" />
+        <activity
+            android:name=".BookTransport"
+            android:parentActivityName=".CustomerActivity" />
+        <activity
+            android:name=".DiscoverPlace"
+            android:parentActivityName=".CustomerActivity" />
+        <activity android:name=".BannerAdd" />
+        <activity android:name=".EmployeeActivity" />
+        <activity
+            android:name=".CustomerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TransportUpdateActivity" />
+        <activity android:name=".TransportDetailsActivity" />
+        <activity android:name=".TransportAdd" />
+        <activity
+            android:name=".PackageUpdateActivity"
+            android:parentActivityName=".PackageDetailsActivity" />
+        <activity android:name=".PackageDetailsActivity" />
+        <activity
+            android:name=".HotelUpdateActivity"
+            android:parentActivityName=".HotelDetailsActivity" />
+        <activity android:name=".HotelDetailsActivity" />
+        <activity android:name=".HotelAdd" />
+        <activity android:name=".FirebasedatabaseTest" />
+        <activity
+            android:name=".PlaceUpdateActivity"
+            android:parentActivityName=".PlaceDetailsActivity" />
+        <activity android:name=".PlaceDetailsActivity" />
+        <activity android:name=".ImageActivity" />
+        <activity android:name=".PlaceAdd" />
+        <activity android:name=".PackageAdd" />
+        <activity
+            android:name=".AdminActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Profile" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".RegisterDataActivity" />
+        <activity android:name=".Home" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

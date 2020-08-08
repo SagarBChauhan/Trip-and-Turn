@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransportAdd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_add_primary_dark"
+            android:drawablePadding="5dp"
+            android:fontFamily="casual"
+            android:paddingTop="15dp"
+            android:text="Add Transport"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/scrollview_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:background="@drawable/round_corners"
+                    android:elevation="6dp">
+
+                    <ImageView
+                        android:id="@+id/display_picture_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_photo_150dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:alpha=".9"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_camera_alt_black_24dp"
+                        android:elevation="6dp"
+                        android:gravity="center"
+                        android:paddingHorizontal="100dp"
+                        android:paddingVertical="5dp"
+                        android:text="Upload picture"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <ProgressBar
+                    android:id="@+id/progress_upload"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/company_name"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_package_primary"
+                            android:drawablePadding="5dp"
+                            android:hint="Company name"
+                            android:inputType="textPersonName"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"></EditText>
+                    </TableRow>
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/transport_name"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_package_primary"
+                            android:drawablePadding="5dp"
+                            android:hint="Transport name"
+                            android:inputType="textPersonName"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"></EditText>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/model"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_info"
+                            android:drawableTint="@color/colorPrimary"
+                            android:drawablePadding="5dp"
+                            android:hint="Transport model"
+                            android:inputType="text"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"></EditText>
+                    </TableRow>
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/type"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_type_primary"
+                            android:drawablePadding="5dp"
+                            android:hint="Transport type"
+                            android:inputType="text"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"></EditText>
+                    </TableRow>
+
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/cost"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:digits="0123456789"
+                            android:drawableLeft="@drawable/ic_mony_primary"
+                            android:drawablePadding="5dp"
+                            android:hint="Cost per KM"
+                            android:inputType="number"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp" />
+                    </TableRow>
+                    <TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/save"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:paddingVertical="20dp"
+                                android:text="Add"
+                                android:textColor="@android:color/white"></Button>
+
+                            <Button
+                                android:id="@+id/cancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/darker_gray"
+                                android:paddingVertical="20dp"
+                                android:text="Cancel"
+                                android:textColor="@android:color/white"></Button>
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progress_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

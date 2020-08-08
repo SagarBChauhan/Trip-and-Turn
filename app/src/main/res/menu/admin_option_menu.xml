@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_profile"
+        android:orderInCategory="100"
+        android:title="Profile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_user_details"
+        android:orderInCategory="100"
+        android:title="User Details"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_change_password"
+        android:orderInCategory="100"
+        android:title="Change password"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="Log out"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelAdd">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:paddingHorizontal="15dp">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_add_primary_dark"
+            android:drawablePadding="5dp"
+            android:fontFamily="casual"
+            android:paddingTop="15dp"
+            android:text="Add Hotel"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/add_hotel_scrollview_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/title">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:background="@drawable/round_corners"
+                    android:elevation="6dp">
+
+                    <ImageView
+                        android:id="@+id/hotel_display_picture_upload"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_photo_150dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:alpha=".9"
+                        android:background="@color/white"
+                        android:drawableLeft="@drawable/ic_camera_alt_black_24dp"
+                        android:elevation="6dp"
+                        android:gravity="center"
+                        android:paddingHorizontal="100dp"
+                        android:paddingVertical="5dp"
+                        android:text="Upload picture"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <ProgressBar
+                    android:id="@+id/hotel_progress_upload"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/add_hotel_name"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_package_primary"
+                            android:drawablePadding="5dp"
+                            android:hint="Hotel name"
+                            android:inputType="textPersonName"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"></EditText>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <EditText
+                            android:id="@+id/add_hotel_type"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_type_primary"
+                            android:drawablePadding="5dp"
+                            android:hint="Hotel type"
+                            android:inputType="text"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"></EditText>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:id="@+id/add_hotel_address"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_place"
+                            android:drawableTint="@color/colorPrimary"
+                            android:drawablePadding="5dp"
+                            android:ems="10"
+                            android:hint="Hotel address"
+                            android:inputType="textMultiLine"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginVertical="5dp"
+                        android:background="@drawable/control_shape"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:drawableLeft="@drawable/ic_flag_primary"></TextView>
+
+                            <Spinner
+                                android:id="@+id/country"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:entries="@array/country">>
+                            </Spinner>
+                        </RelativeLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginVertical="5dp"
+                        android:background="@drawable/control_shape"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:drawableLeft="@drawable/ic_star_border_primary_24dp"></TextView>
+
+                            <Spinner
+                                android:id="@+id/state"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:entries="@array/state">>
+                            </Spinner>
+                        </RelativeLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginVertical="5dp"
+                        android:background="@drawable/control_shape"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:drawableLeft="@drawable/ic_location_city_primary_24dp"></TextView>
+
+                            <Spinner
+                                android:id="@+id/city"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:entries="@array/city"></Spinner>
+                        </RelativeLayout>
+                    </TableRow>
+
+
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/add_hotel_contact"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_call_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:hint="Contact number"
+                            android:inputType="phone"
+                            android:digits="+0123456789"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"/>
+                    </TableRow>
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/add_hotel_email"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_email_primary_24dp"
+                            android:drawablePadding="5dp"
+                            android:hint="Email address"
+                            android:inputType="textEmailAddress"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"/>
+                    </TableRow>
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/add_hotel_website"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_email_primary_24dp"
+                            android:drawablePadding="5dp"
+                            android:hint="Website"
+                            android:inputType="textUri"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"/>
+                    </TableRow>
+                    <TableRow>
+                        <EditText
+                            android:id="@+id/add_hotel_description"
+                            android:layout_marginVertical="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/control_shape"
+                            android:drawableLeft="@drawable/ic_description_primary"
+                            android:drawablePadding="5dp"
+                            android:hint="Description"
+                            android:inputType="text"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"/>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:id="@+id/add_hotel_save"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:paddingVertical="20dp"
+                                android:text="Add"
+                                android:textColor="@android:color/white"></Button>
+
+                            <Button
+                                android:id="@+id/add_hotel_cancel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/darker_gray"
+                                android:paddingVertical="20dp"
+                                android:text="Cancel"
+                                android:textColor="@android:color/white"></Button>
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/add_hotel_progress_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

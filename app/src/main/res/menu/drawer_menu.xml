@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Dashboard" />
+    </group>
+    <item android:title="Manage">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_place"
+                    android:icon="@drawable/ic_place"
+                    android:title="Place" />
+                <item
+                    android:id="@+id/nav_hotel"
+                    android:icon="@drawable/ic_hotel"
+                    android:title="Hotel" />
+                <item
+                    android:id="@+id/nav_package"
+                    android:icon="@drawable/ic_package"
+                    android:title="Package" />
+                <item
+                    android:id="@+id/nav_transport"
+                    android:icon="@drawable/ic_transport"
+                    android:title="Transport" />
+                <item
+                    android:id="@+id/nav_gift"
+                    android:icon="@drawable/ic_giftcard"
+                    android:title="Gift vouchers" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Peoples">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_users"
+                    android:icon="@drawable/ic_user"
+                    android:title="Users" />
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_login"
+                    android:title="Login" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Action">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_payments"
+                    android:icon="@drawable/ic_payment"
+                    android:title="Payments" />
+                <item
+                    android:id="@+id/nav_trips"
+                    android:icon="@drawable/ic_trip"
+                    android:title="Trips" />
+                <item
+                    android:id="@+id/nav_package_bookings"
+                    android:icon="@drawable/ic_package_booking"
+                    android:title="Package bookings" />
+                <item
+                    android:id="@+id/nav_hotel_bookings"
+                    android:icon="@drawable/ic_hotel"
+                    android:title="Hotel bookings" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Service/Communication">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_passport"
+                    android:icon="@drawable/ic_passport"
+                    android:title="Passport Assistance" />
+                <item
+                    android:id="@+id/nav_enquiry"
+                    android:icon="@drawable/ic_feedback"
+                    android:title="Enquiry" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Photo gallery">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_place_gallery"
+                    android:icon="@drawable/ic_place"
+                    android:title="Places" />
+                <item
+                    android:id="@+id/nav_hotel_gallery"
+                    android:icon="@drawable/ic_hotel"
+                    android:title="Hotels" />
+                <item
+                    android:id="@+id/nav_package_gallery"
+                    android:icon="@drawable/ic_package"
+                    android:title="Package" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Information">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info"
+                android:title="About us"></item>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact"
+                android:title="Contact us"></item>
+        </menu>
+    </item>
+</menu>

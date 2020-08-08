@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/listIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/listIcon"
+        android:layout_toRightOf="@+id/listIcon"
+        android:maxLines="1"
+        android:text="Android Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/listSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listTitle"
+        android:layout_alignStart="@+id/listTitle"
+        android:layout_alignLeft="@+id/listTitle"
+        android:maxLines="1"
+        android:text="Android Version"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

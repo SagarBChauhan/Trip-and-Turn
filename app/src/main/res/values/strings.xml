@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Trip and Turn</string>
+    <array name="transportation">
+        <item>Mini Bus</item>
+        <item>Luxury bus</item>
+        <item>Sport utility vehicle</item>
+        <item>Tempo Travel</item>
+        <item>Crossover</item>
+    </array>
+    <string name="navigation_drawer_open">Navigation drawer open</string>
+    <string name="navigation_drawer_close">Navigation drawer close</string>
+</resources>

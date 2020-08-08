@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country">
+        <item>Select country</item>
+        <item>America</item>
+        <item>Bangladesh</item>
+        <item>Bangladesh</item>
+        <item>China</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="state">
+        <item>Select state</item>
+        <item>Delhi</item>
+        <item>Gujarat</item>
+        <item>Madhya pradesh</item>
+        <item>Maharashtra</item>
+        <item>Rajasthan</item>
+    </string-array>
+    <string-array name="city">
+        <item>Select city</item>
+        <item>Bardoli</item>
+        <item>Navsari</item>
+        <item>Surat</item>
+        <item>Valsad</item>
+    </string-array>
+    <string-array name="place">
+        <item>Select place</item>
+        <item>Dandi</item>
+        <item>Saputara</item>
+        <item>Umbhrat</item>
+    </string-array>
+    <string-array name="bankname">
+        <item>Select bank</item>
+        <item>Axis Bank</item>
+        <item>Bank Of Baroda</item>
+        <item>State Bank Of India</item>
+    </string-array>
+</resources>

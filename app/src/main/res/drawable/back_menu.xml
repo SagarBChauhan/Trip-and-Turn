@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" />
+    <corners
+        android:topLeftRadius="20dp"
+        android:topRightRadius="20dp" />
+</shape>
+    <!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--    <item>-->
+    <!--        <shape android:shape="rectangle">-->
+    <!--            <gradient-->
+    <!--                android:endColor="@android:color/transparent"-->
+    <!--                android:startColor="#7d000000"></gradient>-->
+    <!--            <corners android:topLeftRadius="30dp"-->
+    <!--                android:topRightRadius="30dp" />-->
+    <!--        </shape>-->
+    <!--    </item>-->
+    <!--    <item-->
+    <!--        android:bottom="3dp"-->
+    <!--        android:left="3dp"-->
+    <!--        android:right="3dp"-->
+    <!--        android:top="3dp">-->
+    <!--        <shape android:shape="rectangle">-->
+    <!--            <padding-->
+    <!--                android:bottom="40dp"-->
+    <!--                android:left="10dp"-->
+    <!--                android:right="10dp"-->
+    <!--                android:top="40dp"></padding>-->
+    <!--            <solid android:color="@android:color/white" />-->
+    <!--            <corners-->
+    <!--                android:topLeftRadius="30dp"-->
+    <!--                android:topRightRadius="30dp" />-->
+    <!--        </shape>-->
+    <!--    </item>-->
+    <!--</layer-list>-->

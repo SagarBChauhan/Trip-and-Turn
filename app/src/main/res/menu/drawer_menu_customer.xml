@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Dashboard" />
+    </group>
+    <item android:title="Explore">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_place"
+                    android:icon="@drawable/ic_place"
+                    android:title="Discover place" />
+                <item
+                    android:id="@+id/nav_hotel"
+                    android:icon="@drawable/ic_hotel"
+                    android:title="Hotel" />
+                <item
+                    android:id="@+id/nav_package"
+                    android:icon="@drawable/ic_package"
+                    android:title="Package" />
+                <item
+                    android:id="@+id/nav_transport"
+                    android:icon="@drawable/ic_transport"
+                    android:title="Transport" />
+                <item
+                    android:id="@+id/nav_passport"
+                    android:icon="@drawable/ic_passport"
+                    android:title="Passport Assistance" />
+                <item
+                    android:id="@+id/nav_gift"
+                    android:icon="@drawable/ic_giftcard"
+                    android:title="Gift vouchers" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Service/Communication">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_enquiry"
+                    android:icon="@drawable/ic_feedback"
+                    android:title="Enquiry" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Information">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info"
+                android:title="About us"></item>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_contact"
+                android:title="Contact us"></item>
+        </menu>
+    </item>
+    <item android:title="Actions">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Settings"></item>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_account_circle_black_24dp"
+                android:title="Profile"></item>
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Log out"></item>
+        </menu>
+    </item>
+
+</menu>

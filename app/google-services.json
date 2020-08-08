@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "309314993357",
+    "firebase_url": "https://trip-and-turn-1570283887147.firebaseio.com",
+    "project_id": "trip-and-turn-1570283887147",
+    "storage_bucket": "trip-and-turn-1570283887147.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309314993357:android:e2712815f11aaa83f37d84",
+        "android_client_info": {
+          "package_name": "com.example.tripandturn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309314993357-708co0m66odbpdrku65nhh1obo89h80u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tripandturn",
+            "certificate_hash": "a768da11f23582cb442bff3ff830ccb82c67326b"
+          }
+        },
+        {
+          "client_id": "309314993357-54dhib2mjoujk30porf3b7dofh1147m6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqgc5xdlxUpQCtGosiRydZJye5hJdIRSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309314993357-54dhib2mjoujk30porf3b7dofh1147m6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

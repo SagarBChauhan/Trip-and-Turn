@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/slideshow1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".9"
+        android:minWidth="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anim_slideshow"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_drawable"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="Trip and Turn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/plane">
+            </ImageView>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/profile_picture_profile"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_account_circle_primary_150dp"></ImageView>
+            <ProgressBar
+                android:id="@+id/progress_profile_picture_upload"
+                style="?android:attr/progressBarStyle"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="215dp"
+                android:layout_height="215dp" />
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="5dp"
+            android:drawableRight="@drawable/ic_verified_user_green_20dp"
+            android:minWidth="130dp"
+            android:maxLines="1"
+            android:maxWidth="300dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/username_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16mscit006@gmail.com"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="15dp">
+
+            <Button
+                android:id="@+id/save_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_primary_shape"
+                android:drawableRight="@drawable/ic_save_white_20dp"
+                android:drawablePadding="2dp"
+                android:paddingHorizontal="20dp"
+                android:text="Save"
+                android:textColor="@android:color/white"></Button>
+<!--            <Button-->
+<!--                android:id="@+id/logout"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Sign out"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:paddingHorizontal="20dp"-->
+<!--                android:background="@drawable/round_grey_shape">-->
+<!--            </Button>-->
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

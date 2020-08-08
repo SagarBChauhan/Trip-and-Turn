@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:drawable="@drawable/sunflower_landscape_wide"
+    android:duration="4000">
+</item>
+<item android:drawable="@drawable/luvender"
+    android:duration="4000">
+</item>
+<item android:drawable="@drawable/rock"
+    android:duration="4000">
+</item>
+<item android:drawable="@drawable/mountain"
+    android:duration="4000">
+</item>
+</animation-list>
